@@ -1,0 +1,200 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-page-content {
+		height: 800px;
+	}
+
+	.brand {
+		font-size: 1.1em;
+	}
+
+	.app-name {
+		font-size: 2em;
+	}
+
+	/*Style for login buttons*/
+	#login-dropdown-list {
+	left: -220%;
+	}
+	/*end style for login button*/
+
+	.apps-btn {
+		margin-top: 40px;
+	}
+
+	.todo-app-btn,
+	.wiki-app-btn,
+	.payometer-app-btn {
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+	.apps-btn h2 {
+		font-size: 1.1em;
+	}
+
+	.not-available h4 {
+		font-size: 2em;
+	}
+
+	.not-logged-in {
+		margin-top: 40px;
+	}
+
+	.not-logged-in h3 {
+		font-size: 1.8em;
+	}
+
+	/*Style for todo content*/
+	.todo-content .current-time {
+		font-size: 0.9em;
+	}
+
+	#login-name-link {
+		font-size: 1em;
+	}
+
+	.todo-content h1 {
+		font-size: 2em;
+	}
+
+	.tasks ul {
+		padding-left: 0;
+		font-size: 1em;
+	}
+
+	.popup-form input {
+		width: 77%;
+	}
+
+	.popup-form .close-popup-form {
+		right: 4%;
+	}
+
+	.popup-form .add-task {
+		font-size: 2em;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.main-page-content {
+		height: 800px;
+	}
+
+	.brand {
+		font-size: 1.1em;
+	}
+
+	.app-name {
+		font-size: 2em;
+	}
+
+	/*Style for login buttons*/
+	#login-dropdown-list {
+	left: -220%;
+	}
+	/*end style for login button*/
+
+	.apps-btn {
+		margin-top: 40px;
+	}
+
+	.todo-app-btn,
+	.wiki-app-btn,
+	.payometer-app-btn {
+		height: 100px;
+		margin-bottom: 20px;
+	}
+
+	.apps-btn h2 {
+		font-size: 1.1em;
+	}
+
+	.not-available h4 {
+		font-size: 2em;
+	}
+
+	.not-logged-in {
+		margin-top: 40px;
+	}
+
+	.not-logged-in h3 {		
+		font-size: 1.5em;
+	}
+
+	/*Style for todo content*/
+	.todo-content .current-time {
+		font-size: 0.9em;
+	}
+
+	#login-name-link {
+		font-size: 1em;
+	}
+
+	.todo-content h1 {
+		font-size: 2em;
+	}
+
+	.tasks ul {
+		padding-left: 0;
+		font-size: 1em;
+	}
+
+	.popup-form input {
+		width: 77%;
+	}
+
+	.popup-form .close-popup-form {
+		right: 4%;
+	}
+
+	.popup-form .add-task {
+		font-size: 2em;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

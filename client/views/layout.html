@@ -1,0 +1,54 @@
+<template name="layout">
+	<div class="container">
+		<div class="row">
+			<div class="main-page-content">
+				<div class="col-md-8">
+					<div class="menu">				
+						<div class="brand">
+							<span>W</span>eb<span>T</span>ools <span>S</span>tudio
+						</div>
+						{{> loginButtons}}
+						<h1 class="app-name">Diary of tasks</h1>
+						<p class="app-descr">This app is created for better organization of the day, and it helps to cope with the large volume of incoming information in our mad world. In the application, you can quickly save a note, record a current affairs or make to-do list for tomorrow, and also count the number of money spent per day </p>
+						{{#if currentUser}}
+							<div class="apps-btn">
+								<a href="/todoApp">
+									<div class="todo-app-btn">
+										<h2><i class="zmdi zmdi-calendar-note"></i> To-Do List</h2>
+										<p>create your own plan to conquer the Earth</p>
+										<!-- <p>Сreate your own plan to take over the world</p> -->
+									</div>
+								</a>
+								<div class="wiki-app-btn">
+									<h2><i class="zmdi zmdi-edit"></i> Wiki Notes</h2>
+									<p>Сreate your own knowledge base</p>
+									<div class="not-available">
+										<h4>Not Available</h4>
+									</div>
+								</div>
+								<div class="payometer-app-btn">
+									<h2><i class="zmdi zmdi-money-box"></i> Payometer</h2>
+									<p>How much you spent today?</p>
+									<div class="not-available">
+										<h4>Not Available</h4>
+									</div>
+								</div>
+							</div>
+						{{else}}
+							<div class="not-logged-in">
+								<h3>You are not logged in</h3>
+							</div>							
+						{{/if}}
+						<hr>
+						<div class="social">
+							<a href="#"><i class="zmdi zmdi-vk"></i></a> <a href="#"><i class="zmdi zmdi-facebook"></i></a> <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 hidden-xs">
+					<div class="bg"></div>
+				</div>
+		  </div>			
+		</div>
+	</div>
+</template>

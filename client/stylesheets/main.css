@@ -1,0 +1,362 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100%;
+	background: linear-gradient(#535663, #545764);
+}
+
+.col-md-8,
+.col-md-4 {
+	padding: 0;
+}
+
+/*Main block with content*/
+.main-page-content {
+	width: 100%;
+	height: 750px;
+	margin: 5% 0 0;
+	/*padding: 10% 15% 5% 10%;*/
+	background: #FFFEFF;
+	border-radius: 10px;
+}
+
+/*Block with image*/
+.bg {
+	width: 100%;
+	min-height: 750px;
+	background: url(/img/app-bg.jpg) no-repeat;
+	background-size: cover;
+	border-radius: 0 10px 10px 0;
+}
+
+/*Block with brand, descr and buttons*/
+.menu {
+	width: 100%;
+	height: 100%;
+	/*margin: 10% 0;*/
+	padding: 10% 15% 5% 10%;
+}
+
+.brand {
+	display: inline-block;
+	color: #B5BBC6;
+	font-family: "RobotoRegular";
+	font-size: 1.3em;
+}
+
+/*Style for Account meteor plugin*/
+#login-buttons {
+	float: right;
+}
+
+#login-sign-in-link {
+	font-family: "RobotoRegular";
+	font-size: 1.2em;
+	/*color: #F27935;*/
+	color: #858486;
+}
+
+#login-name-link {
+	font-family: "RobotoBold";
+	font-size: 1.2em;
+	color: #F27935;
+	/*color: #000;*/
+}
+
+#login-sign-in-link:hover {
+	color: #F27935;
+}
+
+#login-buttons .login-button,
+.accounts-dialog .login-button {
+	font-family: "RobotoBold";
+	color: #000;
+	background: #F2F1EF;
+}
+
+#login-buttons .login-button:hover,
+.accounts-dialog .login-button:hover {
+	background: #F27935;
+}
+
+#login-dropdown-list {
+	top: 180%;
+	left: -150%;
+}
+/*end style for Account plugin*/
+
+.brand span {
+	color: #F27935;
+}
+
+.app-name {
+	margin-bottom: 20px;
+	font-family: "RobotoRegular";
+	font-size: 3em;
+	color: #858486;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.app-descr {
+	font-family: "RobotoRegular";
+	color: #B5BBC6;
+	/*color: #C9CFD7;*/
+}
+
+.apps-btn {	
+	margin-top: 40px;	
+	/*color: #D1D3D5;*/
+	text-align: center;	
+}
+
+.apps-btn h2 {
+	font-family: "RobotoBold";
+	font-size: 1.4em;
+	color: #2C3E50;
+	text-transform: uppercase;
+}
+
+.apps-btn p {
+	font-family: "RobotoBold";
+	font-size: 0.9em;
+	color: #858486;
+}
+
+.apps-btn a {
+	color: #2C3E50;
+	text-decoration: none;
+}
+
+.todo-app-btn,
+.wiki-app-btn,
+.payometer-app-btn {
+	position: relative;
+	width: 90%;
+	height: 80px;
+	margin-bottom: 40px;
+	font-size: 1.2em;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.todo-app-btn:hover,
+.wiki-app-btn:hover,
+.payometer-app-btn:hover {
+	/*background: #E4F1FE;*/	
+	background: #F2F1EF;
+	box-shadow: 0 0 40px 0 #ccc
+}
+
+.todo-app-btn:hover h2,
+.wiki-app-btn:hover h2,
+.payometer-app-btn:hover h2 {
+	color: #F27935;
+}
+
+.not-available {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+}
+
+.not-available h4 {
+	font-family: "RobotoBold";
+	font-size: 3em;
+	color: #fff;
+}
+
+.not-logged-in {
+	margin-top: 80px;
+	
+	text-align: center;
+}
+
+.not-logged-in h3 {
+	font-family: "RobotoLight";
+	font-size: 2.5em;
+	color: #F27935;
+}
+
+.social {
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: right;
+	color: #858486;
+}
+
+.social a {
+	color: #858486;
+}
+
+.social i:hover {
+	color: #F27935;
+}
+
+/*To-Do App style start here*/
+.todo-content {
+	width: 100%;
+	padding-bottom: 60px;
+	/*height: 750px;*/
+	/*margin: 5% 0 0;*/
+	/*padding: 10% 15% 5% 10%;*/
+	background: #FFFEFF;
+	border-radius: 10px;
+}
+
+.todo-content .header {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	padding: 1px;
+	/*background: rgba(0,0,0,0.7);*/
+	background: #22313F;
+	border-radius: 10px 10px 0 0;
+}
+
+.todo-content .current-time {
+	margin-top: 1%;
+	font-family: "RobotoLight";
+	font-size: 1.3em;
+	color: #858486;
+	text-align: center;	
+}
+
+.user-info {
+	float: right;
+	margin-top: 1%;
+	margin-right: 5%;
+}
+
+.user-info .home-link {
+	margin-right: 10px;
+	font-size: 2em;
+	color: #858486;
+}
+
+.user-info .home-link:hover {
+	color: #F27935;
+}
+
+.todo-content h1 {
+	display: inline-block;
+	position: absolute;
+	left: 2%;
+	bottom: 0;
+	/*margin-top: 2%;
+	margin-left: 2%;*/
+	font-family: "RobotoRegular";
+	color: #858486;
+}
+
+.todo-content .tasks {
+	position: relative;
+	margin: 3% 2%;
+	background: #FFFEFF;
+	border-radius: 0 0 10px 10px;
+}
+
+.tasks .call-form {
+	position: absolute;
+	right: 40px;
+	bottom: -45px;
+	font-size: 2em;
+	color: #F27935;
+	cursor: pointer;
+}
+
+.tasks ul {
+	margin-top: 20px;
+	list-style-type: none;
+	font-family: "RobotoRegular";
+	font-size: 1.5em;
+}
+
+.tasks ul li {
+	margin-bottom: 10px;
+	clear: both;
+}
+
+.tasks .complete-task {
+	cursor: pointer;
+}
+
+.tasks .priority-task {
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.tasks .delete-task {
+	float: right;
+	cursor: pointer;
+}
+
+.tasks .delete-task:hover {
+	color: #F27935;
+}
+
+.tasks .popup-form {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	border-radius: 20px;
+	z-index: 20;
+	background: #22313F;
+	box-shadow: 5px 5px 50px 0 rgba(0,0,0,0.7);
+}
+
+.popup-form input {
+	position: relative;
+	width: 85%;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	border: 5px solid #ccc;
+	outline: 0;
+	font-family: "RobotoRegular";
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.popup-form .add-task {
+	display: inline-block;
+	font-size: 3.5em;
+	color: #F27935;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.popup-form .close-popup-form {
+	position: absolute;
+	right: 2%;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+.completed-task {
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+.popup-form button {
+	border: none;
+	background: transparent;
+}
+
+.checked {
+	color: #F27935;
+}
+
+
+

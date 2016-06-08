@@ -1,0 +1,49 @@
+<template name="todoApp">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class='todo-content'>
+					<div class="header">
+						<div class="current-time"></div>
+						<div class="user-info">
+							<a href="/"><i class="home-link zmdi zmdi-home"></i></a>
+							{{> loginButtons}}
+						</div>
+						<h1>To-Do List</h1>
+					</div>
+					{{#if currentUser}}
+						<div class="tasks">
+							<div class="call-form">
+								<i class="zmdi zmdi-collection-plus"></i>
+							</div>
+							<ul>
+								{{#each tasks}}
+									<li>
+										<i class="{{#if completed}} checked {{/if}} complete-task zmdi zmdi-badge-check" data-check="false"></i>
+										<i class="{{#if priority}} checked {{/if}} priority-task zmdi zmdi-star-outline" data-check="false"></i>
+										<i class="{{#if completed}} completed-task {{/if}}">{{task}}</i>
+										<i class="delete-task zmdi zmdi-delete"></i>
+									</li>
+									<hr>
+								{{/each}}
+							</ul>
+							<div class="popup-form">
+								<form class="new-task-form">
+									<input id="task" type="text" name="task" placeholder="Enter new task here..." autofocus required>
+									<button type="submit">
+											<i class="add-task zmdi zmdi-file-plus"></i>
+									</button>
+									<i class="close-popup-form zmdi zmdi-close"></i>
+								</form>
+							</div>
+						</div>
+					{{else}}
+						<div class="not-logged-in">
+							<h3>You are not logged in</h3>
+						</div>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
